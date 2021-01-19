@@ -1,7 +1,7 @@
 ---
 title: Writing a New Post
 author: Cotes Chung
-date: 2019-08-08 14:10:00 +0800
+date: 2019-08-08 14:10:00 -0500
 categories: [Blogging, Tutorial]
 tags: [writing]
 ---
@@ -205,4 +205,3 @@ If you want to display the **Liquid** snippet, surround the liquid code with `{%
 ## Learn More
 
 For more knowledge about Jekyll posts, visit the [Jekyll Docs: Posts](https://jekyllrb.com/docs/posts/).
-

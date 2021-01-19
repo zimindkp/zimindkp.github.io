@@ -1,12 +1,12 @@
 ---
-title: Welcome
+title: Adding Disks to ASM
 author: Kishan Parekh
-date: 2021-01-16 22:40:00 -0500
-categories: [Blogging]
-tags: [welcome]
+date: 2021-01-18 19:00:00 -0500
+categories: [Blogging, ASM]
+tags: [oracle][ASM]
 ---
 
-## Introduction
+## ASM Disks
 
 Hello Everyone! I am Kishan Parekh. Welcome to my technology blog.
 
