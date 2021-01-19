@@ -7,15 +7,14 @@
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # --------------------------
-title: DBinity                         # the main title
+title: "DBinity"                         # the main title
 
-tagline: Making sense of data in this world   # it will display as the sub-title
+tagline: "Making sense of data in this world"   # it will display as the sub-title
 
-description: >-                        # used by seo meta and the atom feed
-  Sharing my thoughts and articles from my professional and personal life.
+description: "Sharing my thoughts and articles from my professional and personal life."   # used by seo meta and the atom feed
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: 'https://zimindkp.github.io'
+url: "https://zimindkp.github.io"
 
 author: Kishan Parekh                  # change to your full name
 
@@ -27,7 +26,7 @@ twitter:
 
 social:
   name: Kishan Parekh                 # it will shows as the copyright owner in Footer
-  email: "example@doamin.com"             # change to your email address
+  email: "example@domain.com"             # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/username      # change to your twitter homepage

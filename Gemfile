@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
-gem "jekyll", ">= 4.1.0", "< 5.0"
-
+## gem "jekyll", ">= 4.1.0", "< 5.0"
+gem "jekyll", "~> 4.2"
 
 # plugins
 group :jekyll_plugins do
@@ -10,6 +10,7 @@ group :jekyll_plugins do
   gem "jekyll-seo-tag"
   gem "jekyll-archives"
   gem "jekyll-sitemap"
+  gem "jekyll-timeago", "~> 0.13.1"
 end
 
 group :test do
