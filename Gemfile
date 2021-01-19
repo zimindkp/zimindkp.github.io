@@ -7,21 +7,21 @@ gem "kramdown-parser-gfm", "~> 1.1.0"
 gem "jekyll", "~> 3.9"
 
 # plugins
-#/ group :jekyll_plugins do
-#  gem "jekyll-paginate"
-#  gem "jekyll-redirect-from"
-#  gem "jekyll-seo-tag"
-#  gem "jekyll-archives"
-#  gem "jekyll-sitemap"
-#  gem "jekyll-coffeescript"
-#  gem "jekyll-default-layout"
-#  gem "jekyll-gist"
-#  gem "jekyll-github-metadata"
-#  gem "jekyll-optional-front-matter"
-#  gem "jekyll-readme-index"
-#  gem "jekyll-titles-from-headings"
-#  gem "jekyll-relative-links"
-#end
+group :jekyll_plugins do
+  gem "jekyll-paginate"
+  gem "jekyll-redirect-from"
+  gem "jekyll-seo-tag"
+  gem "jekyll-archives"
+  gem "jekyll-sitemap"
+  gem "jekyll-coffeescript"
+  gem "jekyll-default-layout"
+  gem "jekyll-gist"
+  gem "jekyll-github-metadata"
+  gem "jekyll-optional-front-matter"
+  gem "jekyll-readme-index"
+  gem "jekyll-titles-from-headings"
+  gem "jekyll-relative-links"
+end
 
 group :test do
   gem "html-proofer"
