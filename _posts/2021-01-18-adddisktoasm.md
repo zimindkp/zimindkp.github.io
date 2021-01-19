@@ -3,7 +3,7 @@ title: Adding Disks to ASM
 author: Kishan Parekh
 date: 2021-01-18 19:00:00 -0500
 categories: [Blogging, ASM]
-tags: [oracle][ASM]
+tags: [oracle, asm]
 ---
 
 ## ASM Disks
