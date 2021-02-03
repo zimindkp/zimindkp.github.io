@@ -37,9 +37,11 @@ Now that we have the disk space added to the machine, we have to create logical 
 The only partitions that OUI displays for Windows systems are logical drives that are on disks and have been marked (or stamped) with asmtool or by Oracle ASM Filter Driver.
 
 1. Open Command Prompt using "Run as Administrator"
-2. Start diskpart tool  
+2. Start diskpart tool
+
          {% highlight bash linenos %}
-           c:/> diskpart
+  c:/> diskpart
          {% endhighlight %}
+         
 3. Verify current disks
   Check current disks
