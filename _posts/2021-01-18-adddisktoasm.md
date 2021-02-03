@@ -42,6 +42,6 @@ The only partitions that OUI displays for Windows systems are logical drives tha
          {% highlight bash linenos %}
   c:/> diskpart
          {% endhighlight %}
-         
+
 3. Verify current disks
   Check current disks
