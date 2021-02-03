@@ -36,15 +36,21 @@ Check current space in Windows Disk Management:
 Now that we have the disk space added to the machine, we have to create logical partitions. Oracle ASM only works on partitioned disks in Windows.  
 The only partitions that OUI displays for Windows systems are logical drives that are on disks and have been marked (or stamped) with asmtool or by Oracle ASM Filter Driver.
 
-1. Open Command Prompt using "Run as Administrator"
-1. Start diskpart tool
+1.) Open Command Prompt using "Run as Administrator"
+2.) Start diskpart tool
 
-            c:/> diskpart
+    c:/> diskpart
 
-1. Verify current disks
-
-    ```{% highlight bash linenos %}
-c:/> diskpart
-        {% endhighlight %}
-        ```
-1. A test
+3.) Verify current disks
+    {% highlight bash linenos %}
+DISKPART> list disk
+Disk ###  Status         Size     Free     Dyn  Gpt
+--------  -------------  -------  -------  ---  ---
+Disk 0    Online           60 GB  1024 KB
+Disk 1    Online          155 GB  1024 KB   *
+Disk 2    Online           40 GB  5120 KB
+Disk 3    Online          120 GB  2048 KB
+Disk 4    Online          100 GB  1022 MB
+Disk 5    Online           50 GB    50 GB
+{% endhighlight %}
+4.) Select the disk we added. In this example, it will be disk 5 (disregard the volumes in the image from Step 2). We can also list partitions, but there shouldn't be any.
