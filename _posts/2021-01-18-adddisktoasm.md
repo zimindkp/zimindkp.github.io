@@ -38,16 +38,8 @@ The only partitions that OUI displays for Windows systems are logical drives tha
 
 1. Open Command Prompt using "Run as Administrator"
 2. Start diskpart tool  
-  {% highlight bash linenos %}
-    c:/> diskpart
-  {% endhighlight %}
+    {% highlight bash linenos %}
+     c:/> diskpart
+    {% endhighlight %}
 3. Verify current disks
-code {
-    background-color: rgb(230, 230, 230);
-    border: 1px solid #C1C1C1;
-    border-radius: 3px;
-    padding: 2px;
-}
-Test
-{code}
-Check current disks
+  Check current disks
