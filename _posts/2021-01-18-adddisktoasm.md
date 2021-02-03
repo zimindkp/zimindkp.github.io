@@ -4,15 +4,43 @@ author: Kishan Parekh
 date: 2021-01-18 19:00:00 -0500
 categories: [Blogging, ASM]
 tags: [oracle, asm]
+image: /assets/img/images/asm_overview.jpg
 ---
 
-## ASM Disks
+# ASM Disks
 
-Hello Everyone! I am Kishan Parekh. Welcome to my technology blog.
+As a brief overview, Oracle Automatic Storage Management (ASM) is an integrated, high-performance database file system and disk manager. More information on this can be found on the official documentation [here.](https://docs.oracle.com/cd/E11882_01/server.112/e18951/asmcon.htm#OSTMG036)
 
-I created this blog to share my experiences dealing with various technologies, through my work and personally. Since I am an Oracle Database Consultant, my primary experiences will be in databases, but of late I am delving into new cloud based technologies.
+## Outline
 
-This is my first foray into blogging and I hope to provide helpful tips thoughts through my articles. In fact, I am learning to build this site and will likely add a post on how I am doing it.
+The purpose of this post is to show how to add more disk space to an existing ASM system. This is a common enough procedure on Unix based systems, but on Windows, there are some additional steps to be aware of.
 
-Since this site is in development, I aim to add more functionalities as I gain more experience.
-Feedback will be greatly appreciated (once I learn how to add a comment box &#128513; )
+- Add disk space
+- Create Logical Partitions
+- Label the Partitions
+- Add to ASM Storage
+- Verify partitions were added
+
+### Add Disk Space in Windows
+
+Adding disk space depends on how the system is set up.
+If this is a VM, then it might simply be a matter of mounting a new disk. If a physical device needs to be added, then we'd have to ensure it is compatible.
+
+For the purposes of this post, and from my testing, we are going to assume the space has already been added to the VM. Once the disk has been added, it should be listed as a New Volume, and show up as a Basic Drive.
+
+Check current space in Windows Disk Management:
+![Example of Disk Management](/assets/img/images/diskmgmt.png)
+
+### Create Logical partitions
+
+Now that we have the disk space added to the machine, we have to create logical partitions. Oracle ASM only works on partitioned disks in Windows.  
+The only partitions that OUI displays for Windows systems are logical drives that are on disks and have been marked (or stamped) with asmtool or by Oracle ASM Filter Driver.
+
+1. Open Command Prompt using "Run as Administrator"
+2. Start diskpart tool  
+{% highlight bash %}
+c:/> diskpart
+{% endhighlight %}
+3. Verify current disks
+
+Check current disks
