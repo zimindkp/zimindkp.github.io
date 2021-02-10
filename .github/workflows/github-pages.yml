@@ -7,7 +7,7 @@ on:
 
 jobs:
   jekyll:
-    runs-on: macos-latest
+    runs-on: windows-latest
     steps:
       - name: 📂 setup
         uses: actions/checkout@v2
@@ -17,21 +17,15 @@ jobs:
         # however this may be very slow for large repositories!
         # with:
         # fetch-depth: '0'
-      - name: 💎 setup ruby
-        uses: ruby/setup-ruby@v1
+      - name: 💎 check cache
+        uses: actions/cache@v1
         with:
-          ruby-version: 2.7
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
 
-      - name: 🔨 install dependencies & build site
-        uses: limjh16/jekyll-action-ts@v2
-        with:
-          enable_cache: true
-
-      - name: 🚀 deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.JEKYLL_PAT }}
-          publish_dir: ./_site
-          # if the repo you are deploying to is <username>.github.io, uncomment the line below.
-          # if you are including the line below, make sure your source files are NOT in the "main" branch:
-          publish_branch: master
+      - name: 🔨 use jekyll action
+        uses: helaili/jekyll-action@2.0.2
+        env:
+          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
