@@ -32,7 +32,10 @@ Sounds simple enough, and it really is. The problem, and purpose of this post is
 
 So how do we get our plugins and versions to work on GitHub Pages? To start off, let's analyze how the static site is generated. When we build our site locally using Jekyll, it converts the content in our Markdown files into HTML (which is what the browser needs to display), and creates all the necessary files in a folder called "_site". To make our site available on the internet, we simply place the contents of the _site folder on a machine that can serve them to the public, this is what GitHub Pages does for us.
 
-There are many ways to configure our GitHub repo to trigger a Jekyll build. One of them is to have a branch called {% highlight bash %}gh-pages{% endhighlight %}. You can push your entire Jekyll project without running {% highlight bash %}jekyll build{% endhighlight %}, and GitHub will automatically do it. However, this will use the restrictive github-pages gem.
+There are many ways to configure our GitHub repo to trigger a Jekyll build. One of them is to have a branch called{% highlight bash %}gh-pages{% endhighlight %}. You can push your entire Jekyll project without running
+"{% highlight bash %}jekyll build
+{% endhighlight %}
+", and GitHub will automatically do it. However, this will use the restrictive github-pages gem.
 
 To solve this, we build the site ourselves by runnning {% highlight bash %}bundle exec jekyll build{% endhighlight %}, then pushing the contents of the _site folder to the gh-pages branch. (This requires you have 2+ branches, one is the master or main, and the other is gh-pages). However, running the build from the main branch, then switching to gh-pages gets tedious. Luckily, we can automate this using [GitHub Actions](https://github.com/features/actions) which allows us to automate workflows based on certain events in our repo.
 
