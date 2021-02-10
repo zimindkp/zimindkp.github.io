@@ -23,6 +23,8 @@ group :jekyll_plugins do
   gem "jekyll-relative-links"
 end
 
+repository: zimindkp/zimindkp.github.io
+
 group :test do
   gem "html-proofer"
 end

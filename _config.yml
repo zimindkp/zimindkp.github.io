@@ -111,6 +111,7 @@ collections:
     output: true
     sort_by: order
 
+repository: zimindkp/zimindkp.github.io
 
 defaults:
   -
