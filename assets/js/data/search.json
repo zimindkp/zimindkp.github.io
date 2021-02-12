@@ -1,0 +1,49 @@
+[
+  
+  {
+    "title": "Running Jekyll 4+ on GitHub Pages",
+    "url": "/posts/jekyllgithubpages/",
+    "categories": "Blogging, Jekyll",
+    "tags": "jekyll, website",
+    "date": "2021-02-09 20:00:00 -0500",
+    
+
+
+
+
+
+    "snippet": "What is Jekyll?Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. Think of it like a file-based CMS, without all the complexity. Jekyll takes your content, renders Markdown and Liquid templates, and spits out a complete, static website read..."
+  },
+  
+  {
+    "title": "Adding Disks to ASM",
+    "url": "/posts/adddisktoasm/",
+    "categories": "Blogging, ASM",
+    "tags": "oracle, asm",
+    "date": "2021-01-18 19:00:00 -0500",
+    
+
+
+
+
+
+    "snippet": "ASM DisksAs a brief overview, Oracle Automatic Storage Management (ASM) is an integrated, high-performance database file system and disk manager. More information on this can be found on the official documentation here.OutlineThe purpose of this post is to show how to add more disk space to an ex..."
+  },
+  
+  {
+    "title": "Welcome",
+    "url": "/posts/welcome/",
+    "categories": "Blogging, Welcome",
+    "tags": "writing",
+    "date": "2021-01-16 22:40:00 -0500",
+    
+
+
+
+
+
+    "snippet": "IntroductionHello Everyone! I am Kishan Parekh. Welcome to my technology blog.I created this blog to share my experiences dealing with various technologies, through my work and personally. Since I am an Oracle Database Consultant, my primary experiences will be in databases, but of late I am delv..."
+  }
+  
+]
+

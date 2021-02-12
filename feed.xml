@@ -1,0 +1,144 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://zimindkp.github.io</id>
+  <title>DBinity</title>
+  <subtitle>Sharing my thoughts and articles from my professional and personal life.</subtitle>
+  <updated>2021-02-11T20:21:22-05:00</updated>
+  <author>
+    <name>Kishan Parekh</name>
+    <uri>https://zimindkp.github.io</uri>
+  </author>
+  <link href="/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://zimindkp.github.io" rel="alternate" type="text/html" />
+  <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
+  <rights> © 2021 Kishan Parekh </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Running Jekyll 4+ on GitHub Pages</title>
+    <link href="https://zimindkp.github.io/posts/jekyllgithubpages/" rel="alternate" type="text/html" title="Running Jekyll 4+ on GitHub Pages" />
+    <published>2021-02-09T20:00:00-05:00</published>
+  
+    <updated>2021-02-09T21:55:25-05:00</updated>
+  
+    <id>https://zimindkp.github.io/posts/jekyllgithubpages/</id>
+    <content src="https://zimindkp.github.io/posts/jekyllgithubpages/" />
+    <author>
+      <name>Kishan Parekh</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="Jekyll" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      What is Jekyll?
+
+Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. Think of it like a file-based CMS, without all the complexity. Jekyll takes your content, renders Markdown and Liquid templates, and spits out a complete, static website ready to be served by Apache, Nginx or another web server. Jekyll is the engine behind GitHub Pages, w...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Adding Disks to ASM</title>
+    <link href="https://zimindkp.github.io/posts/adddisktoasm/" rel="alternate" type="text/html" title="Adding Disks to ASM" />
+    <published>2021-01-18T19:00:00-05:00</published>
+  
+    <updated>2021-02-03T21:39:24-05:00</updated>
+  
+    <id>https://zimindkp.github.io/posts/adddisktoasm/</id>
+    <content src="https://zimindkp.github.io/posts/adddisktoasm/" />
+    <author>
+      <name>Kishan Parekh</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="ASM" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      ASM Disks
+
+As a brief overview, Oracle Automatic Storage Management (ASM) is an integrated, high-performance database file system and disk manager. More information on this can be found on the official documentation here.
+
+Outline
+
+The purpose of this post is to show how to add more disk space to an existing ASM system. This is a common enough procedure on Unix based systems, but on Windows, th...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Welcome</title>
+    <link href="https://zimindkp.github.io/posts/welcome/" rel="alternate" type="text/html" title="Welcome" />
+    <published>2021-01-16T22:40:00-05:00</published>
+  
+    <updated>2021-02-03T22:33:42-05:00</updated>
+  
+    <id>https://zimindkp.github.io/posts/welcome/</id>
+    <content src="https://zimindkp.github.io/posts/welcome/" />
+    <author>
+      <name>Kishan Parekh</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="Welcome" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Introduction
+
+Hello Everyone! I am Kishan Parekh. Welcome to my technology blog.
+
+I created this blog to share my experiences dealing with various technologies, through my work and personally. Since I am an Oracle Database Consultant, my primary experiences will be in databases, but of late I am delving into new cloud based technologies.
+
+This is my first foray into blogging and I hope to provi...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+
