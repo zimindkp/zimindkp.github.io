@@ -1,19 +1,38 @@
 ---
-title: Running Jekyll 4+ on GitHub Pages
+title: First Forays into Kubernetes
 author: Kishan Parekh
-date: 2021-02-09 20:00:00 -0500
-categories: [Blogging, Jekyll]
-tags: [jekyll, website]
-image: /assets/img/images/octojekyll.png
+date: 2021-03-10 22:00:00 -0500
+categories: [Blogging, Kubernetes]
+tags: [kubernetes, docker, containers]
+image: /assets/img/images/kuberneteslogo.png
 ---
 
-# What is Jekyll?
+# What is Kubernetes?
 
-Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. Think of it like a file-based CMS, without all the complexity. Jekyll takes your content, renders Markdown and Liquid templates, and spits out a complete, static website ready to be served by Apache, Nginx or another web server. Jekyll is the engine behind [GitHub Pages](https://pages.github.com/), which you can use to host sites right from your GitHub repositories.
+I am sure we've all heard of Kubernetes by now, but if not, here's a quick refresher. Kubernetes (or K8s) is a powerful open-source container orchestration tool across a cluster of machines, initially developed by Google. This is a REALLY brief summary, and there is a whole lot more information on Kubernetes at the official [site.](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) which can be overwhelming. I am huge proponent of learning through practice, so without further ado, let's use the alternative and jump into it.
 
-This is a brief summary, and there is a whole lot more information on Jekyll at the official [site.](https://jekyllrb.com/)
+## Set up a local cluster
 
-## How I Use Jekyll
+We are going to use [minikube](https://minikube.sigs.k8s.io/docs/start/) to run a local Kubernetes system. This just allows  As per the documentation, we need some kind of container manager, and in my case I am using Docker.
+
+Here is a rough outline to set up our cluster
+
+- Install minikube
+- Create a minikube cluster
+- Use `kubectl` to interact with the cluster
+
+
+
+
+
+```mermaid
+graph LR
+A[User] -- kubectl --> B((Master Node))
+A --> C(Round Rect)
+B --> D{Node}
+C --> D
+C --> A
+```
 
 As stated above, we can use Jekyll to build our static site and deploy it using GitHub Pages. This is great for sites like this that have all the information contained in an HTML file for the page, in contrast to more dynamic websites that pull information from a database ([WordPress](https://wordpress.org/) for example). In essence, Jekyll is the software that generates the static websites without having to query a database. Furthermore, since static sites are really just text files, we can easily version a static site.
 
